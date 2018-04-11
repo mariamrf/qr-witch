@@ -8,7 +8,10 @@ var app = new Vue({
 	data: {
 		image: defaults.image,
 		title: defaults.title,
-		code: new QRCode('qr-img-place', 'placeholder'),
+		code: new QRCode('qr-img-place', {
+			text: 'placeholder',
+			colorLight: 'rgba(0,0,0,0)'
+		}),
 		text: '',
 		saved: ''
 	},
