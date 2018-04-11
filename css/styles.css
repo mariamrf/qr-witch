@@ -34,6 +34,10 @@ body {
 	overflow-y: scroll;
 }
 
+#app {
+	min-height: 100vh;
+}
+
 .top-bar {
 	font-family: 'Just Another Hand', monospace;
 	font-size: 1.5em;
@@ -64,9 +68,30 @@ a:hover {
 	width: 5em;
 }
 
+.qr-img-cont {
+	padding: 1em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.show {
+	display: block !important;
+}
+
+.hide {
+	display: none !important;
+}
+
+.qr-img {
+	width: 15em;
+}
+
+#qr-img-place {
+	display: none;
+}
+
 .footer {
-	position: absolute;
-    bottom: 0;
+	position: relative;
     width: 100%;
     text-align: center;
     padding: 0.5em;
@@ -75,4 +100,8 @@ a:hover {
 .license {
 	font-size: 0.8em;
 	font-family: monospace;
+}
+
+input[type=submit] {
+	cursor: pointer;
 }
