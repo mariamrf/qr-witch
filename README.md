@@ -15,4 +15,4 @@ There are a few good ones IMO, I just wanted something simple and straightforwar
 - That's it, really.
 
 ## Credits
-The lib used to generate the codes is [QRCode.js](https://github.com/davidshimjs/qrcodejs). The code itself and its license can be found in [this folder](qr/) (minified is the one used, regular js file for readability).
+The lib used to generate the codes is [QRCode.js](https://github.com/davidshimjs/qrcodejs). The code itself and its license can be found in [this folder](js/qr/) (minified is the one used, regular js file for readability).
