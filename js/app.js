@@ -20,6 +20,7 @@ var app = new Vue({
 	methods: {
 		refresh: function (event) {
 			event.preventDefault();
+			$('.qr-img').fadeOut();
 			this.saved = this.text;
 			if (this.empty) {
 				this.image = defaults.image;
@@ -29,6 +30,7 @@ var app = new Vue({
 				this.image = this.code._el.lastElementChild.src;
 				this.title = this.saved;
 			}
+			$('.qr-img').fadeIn()
 		}
 	},
 	computed: {
