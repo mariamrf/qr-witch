@@ -1,0 +1,65 @@
+/* Turn on custom 8px wide scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* 1px wider than Lion. */
+  /* This is more usable for users trying to click it. */
+  background-color: rgba(0,0,0,0);
+  -webkit-border-radius: 100px;
+}
+/* hover effect for both scrollbar area, and scrollbar 'thumb' */
+::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+  
+  background: rgba(0,0,0,0.5);
+  -webkit-border-radius: 100px;
+  background-clip: padding-box;
+  border: 2px solid rgba(0, 0, 0, 0);
+  min-height: 10px; /*Prevent it from getting too small */
+}
+::-webkit-scrollbar-thumb:vertical:active {
+  background: rgba(0,0,0,0.61); /* Some darker color when you click it */
+  -webkit-border-radius: 100px;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+body {
+	font-family: 'Quicksand', monospace;
+	color: #383732;
+	overflow-y: scroll;
+}
+
+.top-bar {
+	font-family: 'Just Another Hand', monospace;
+	font-size: 1.5em;
+	padding-bottom: 1em;
+}
+
+.top-bar h1 {
+	margin-top: 0.3em;
+	font-size: 2.1em;
+	line-height: 0.8em;
+}
+
+small {
+	opacity: 0.7;
+	font-size: 0.55em;
+}
+
+a {
+	color: #EE7469;
+}
+
+a:hover {
+	color: #B8959B;
+	cursor: pointer;
+}
+
+.logo {
+	width: 5em;
+}
