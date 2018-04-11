@@ -26,18 +26,21 @@ var app = new Vue({
 				this.image = defaults.image;
 				this.title = defaults.title;
 			} else {
-				this.code.makeCode(this.saved);
+				this.code.makeCode(this.trimmed);
 				// for some reason it doesn't work directly as in the
 				// docs with Vue, so we extract the generated image.
 				this.image = this.code._el.lastElementChild.src;
-				this.title = this.saved;
+				this.title = this.trimmed;
 			}
 			$('.qr-img').fadeIn()
 		}
 	},
 	computed: {
 		empty: function () {
-			return $.trim(this.saved).length === 0;
+			return this.trimmed.length === 0;
+		},
+		trimmed: function () {
+			return $.trim(this.saved)
 		}
 	}
 });
