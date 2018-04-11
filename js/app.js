@@ -10,7 +10,9 @@ var app = new Vue({
 		title: defaults.title,
 		code: new QRCode('qr-img-place', {
 			text: 'placeholder',
-			colorLight: 'rgba(0,0,0,0)'
+			colorLight: 'rgba(0,0,0,0)',
+			width: 2000,
+			height: 2000
 		}),
 		text: '',
 		saved: ''

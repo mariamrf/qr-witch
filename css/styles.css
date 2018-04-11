@@ -105,3 +105,11 @@ a:hover {
 input[type=submit] {
 	cursor: pointer;
 }
+
+.who-dis {
+	font-weight: bold;
+}
+
+.who-dis .fa-heart {
+	color: #F77D65;
+}
