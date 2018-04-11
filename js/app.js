@@ -27,6 +27,8 @@ var app = new Vue({
 				this.title = defaults.title;
 			} else {
 				this.code.makeCode(this.saved);
+				// for some reason it doesn't work directly as in the
+				// docs with Vue, so we extract the generated image.
 				this.image = this.code._el.lastElementChild.src;
 				this.title = this.saved;
 			}
