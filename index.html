@@ -42,8 +42,10 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-centered text-center qr-img-cont" id="qr-img-cont">
-				<img class="qr-img" :src="image" :title="title">
-				<div id="qr-img-place">
+				<img class="qr-img" :src="image" :title="title"><br><br>
+				<a id="svg_link" target="_blank" download="QRCode.svg" title="Save link as.."><i class="fa fa-download"></i> .svg</a>
+				<div id="qr-img-place" class="hide"></div>
+				<div id="qr-svg-place" class="hide"></div>
 			</div>
 		</div>
 	</div>
@@ -66,7 +68,7 @@
 
 <script src="js/vue.min.js"></script>
 <script src="js/jquery.js"></script>
-<script src="js/qr/qrcode.min.js"></script>
+<script src="js/qr/qrcode.js"></script>
 <script src="js/app.js"></script>
 <script src="js/script.js"></script>
 

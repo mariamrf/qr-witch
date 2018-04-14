@@ -86,8 +86,9 @@ a:hover {
 	width: 15em;
 }
 
-#qr-img-place {
+#svg_link {
 	display: none;
+	font-weight: bold;
 }
 
 .footer {
